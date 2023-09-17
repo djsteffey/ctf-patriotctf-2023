@@ -2,9 +2,9 @@
 ![](images/problem.PNG)
 
 ## Files
-- given
+- provided
     - suboptimal
-- produced
+- created
     - doit.py
 
 ## Solution

@@ -2,7 +2,10 @@
 ![](images/problem.PNG)
 
 ## Files
-- capybara.jpeg
+- provided
+    - capybara.jpeg
+- created
+    - None
 
 ## Solution
 This is a forensics challenge and all we are given is an image file.  The first thing to do in this kind of situation is check the file with `binwalk` to see if it can find any hidden embedded files.

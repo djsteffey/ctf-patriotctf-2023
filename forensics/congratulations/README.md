@@ -2,7 +2,10 @@
 ![](images/problem.PNG)
 
 ## Files
-- Congratulations.docm
+- provided
+    - Congratulations.docm
+- created
+    - None
 
 ## Solution
 A Word document attachment?  A flag to find?  If there is something hidden and/or malicious in a Microsoft Office document it is almost always some kind of VBA macro.  Let's see if we can extract the macro for examination using `olevba`.

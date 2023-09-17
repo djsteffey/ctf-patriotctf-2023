@@ -2,7 +2,10 @@
 ![](images/problem.PNG)
 
 ## Files
-- ReReCaptcha.zip
+- provided
+    - ReReCaptcha.zip
+- created
+    - decrypt.py
 
 ## Solution
 First things first, unzip that file!
@@ -27,7 +30,7 @@ TLDR: We can use the values of P, Q, and E to decrypt the encryted text (CT) int
 Well we cannot do this decryption with those numbers as an image...we need to make them numbers.  That sure is a lot of numbers to just look at and manually type in somewhere, and it would be very prone to error.  Let's automate converting the numbers in the image to just plain numbers in a file.  We don't use this conversion process for E.png since it really is just one short number.
 ![](images/ss_01.PNG)
 
-So let's make a short script that will do the decryption for us....errr let's just ask ChatGPT do make the script for us!  The script is in the decrypt.py file which was almost complete created by ChatGPT.  I just set the appropriate p, q, e, and ct values from our decoded images and then sticthed two ChatCPT scripts together.
+So let's make a short script that will do the decryption for us....errr let's just ask ChatGPT to make the script for us!  The script is in the decrypt.py file which was almost completely created by ChatGPT.  I just set the appropriate p, q, e, and ct values from our decoded images and then sticthed two ChatGPT scripts together.
 
 Let's run the program and see what we get.
 ![](images/ss_02.PNG)

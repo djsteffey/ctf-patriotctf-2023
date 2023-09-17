@@ -2,6 +2,10 @@
 ![](images/problem.PNG)
 
 ## Files
+- provided
+    - None
+- created
+    - None
 
 ## Solution
 This really is just a scavenger hunt without requiring any hacking.  You just need to know some places to look and see if you can find a piece of the flag.

@@ -3,8 +3,11 @@
 ![](images/problem.PNG)
 
 ## Files
-- he.txt - text file provided as part of the challenge
-- she.text - text file provided as part of the challenge
+- provided
+    - he.txt
+    - she.txt
+- created
+    - None
 
 ## Solution
 For this challenge we are provided two files: he.txt and she.txt.

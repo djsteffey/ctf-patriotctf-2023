@@ -3,11 +3,16 @@
 ![](images/problem.PNG)
 
 ## Files
-- flagfinder.py - Python script that is my implementation of the solution
-
-Note:  Since the server side program was not provided, you will not be able to recreate this challenge without creating your own server side program.
+- provided
+    - None
+- created
+    - flagfinder.py
 
 ## Solution
+```
+Note:  Since the server side program was not provided, you will not be able to recreate this challenge without creating your own server side program.
+```
+
 There are no other files or information provided so let's just start by connecting to the target system and see what information it gives us.
 ![](images/ss_00a.png)
 

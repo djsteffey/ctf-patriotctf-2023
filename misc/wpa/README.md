@@ -2,7 +2,10 @@
 ![](images/problem.PNG)
 
 ## Files
-- savedcap.cap - network packet capture data file
+- provided
+    - savedcap.cap
+- created
+    - None
 
 ## Solution
 For this challenge we are provided one file: savedcap.cap.

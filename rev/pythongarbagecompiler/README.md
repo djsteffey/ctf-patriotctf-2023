@@ -2,9 +2,9 @@
 ![](images/problem.PNG)
 
 ## Files
-- given
+- provided
     - garbage.zip
-- produced
+- created
     - mine.py
 
 ## Solution

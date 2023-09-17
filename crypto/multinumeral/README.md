@@ -2,7 +2,10 @@
 ![](images/problem.PNG)
 
 ## Files
-- Challenge.txt
+- provided
+    - Challenge.txt
+- created
+    - None
 
 ## Solution
 Let's start by opening the provided text file and see what we are dealing with.

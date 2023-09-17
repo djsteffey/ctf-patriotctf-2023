@@ -2,7 +2,10 @@
 ![](images/problem.PNG)
 
 ## Files
-- CoffeeShop.zip
+- provided
+    - CoffeeShop.zip
+- created
+    - None
 
 ## Solution
 Let's start by unzipping the provided file and we get a CoffeeShop.jar file.  A jar file is just some compiled Java code.  Let's run the program and see what happens.

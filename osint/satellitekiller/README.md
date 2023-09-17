@@ -2,6 +2,11 @@
 ![](images/problem.PNG)
 
 ## Files
+- provided
+    - None
+- created
+    - currentcat.tsv
+    - sat.py
 
 ## Solution
 Ok.  First thing is to find out what satellite back the in 80's was taken out by an ASM-135 missle.  Looking at the Wiki page for the ASM-135 (https://en.wikipedia.org/wiki/ASM-135_ASAT) gives us a table that shows the satellite P78-1 Solwind was destroyed by the missle in 1985.  So far so good.

@@ -2,7 +2,10 @@
 ![](images/problem.PNG)
 
 ## Files
-- patchwork
+- provided
+    - patchwork
+- created
+    - patchwork_working
 
 ## Solution
 Let's start by running the program to see what happens.

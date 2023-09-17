@@ -2,8 +2,10 @@
 ![](images/problem.PNG)
 
 ## Files
-- given
+- provided
     - XOR.py
+- created
+    - None
 
 ## Solution
 This was probably the easiest problem in the CTF.

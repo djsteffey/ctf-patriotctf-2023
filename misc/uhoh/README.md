@@ -2,7 +2,10 @@
 ![](images/problem.PNG)
 
 ## Files
-- rockyou.zip - password list file
+- provided
+    - rockyou.zip
+- created
+    - None
 
 ## Solution
 We have a password list file, "rockyou.txt" (inside the provided zip file), and we need to find the phone number that was added.
