@@ -18,7 +18,7 @@ But....what if I got a whole bunch of people to do that simultaneously?  That wo
 Searching that BSSID gives me a circle around a location somewhere in Virgina.  Let's zoom way in.
 ![](images/ss_01.PNG)
 
-There is the location of our BSSID and the associated SSID.  Still a little hard to see.  So just like they say in tv...."Enhance!".
+There is the location of our BSSID and the associated SSID.  Still a little hard to see.  So just like they say on tv...."Enhance!".
 ![](images/ss_02.PNG)
 
 We got our SSID!

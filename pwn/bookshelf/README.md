@@ -81,6 +81,7 @@ Of course it tells us we can't because we are not an admin.  Look back at the co
 Looking back at the main function we call adminBook on line 24 and the parameter passed in is local_c.  We set the value of local_c to 0 on line 10 and no where else do we change its value.  But there has to be a way!
 
 Well local_c is a variable on the stack and it comes after mainbuffer_43 and local_d.  So if we were to visualize what this looks like in memory we would have something like this.
+
 ![](images/ss_07.PNG)
 
 So if we can overflow the mainbuffer_43 we can overwrite the value of local_c (and local_d).  There is no input into mainbuffer_43 in main but it is passed as a parameter to the writeBook function.  Let's look there.
@@ -100,7 +101,7 @@ There are a few possibilities of things we could do.  The two most common are to
 
 The shellcode option has become significantly less viable with operating system improvements such as marking the stack as non-executable.
 
-ROP chain doesn't ahve this weakness but you do generally need to know at least one address in the library file that contains the function you want to call.  This is because of Address Space Layout Randomization (ASLR) means things will not always be in the same location in memory.  But if you know the address of *something* in the target library, then you can just calculate the offset to the address of what you want to call.
+ROP chain doesn't have this weakness but you do generally need to know at least one address in the library file that contains the function you want to call.  This is because of Address Space Layout Randomization (ASLR) meaning things will not always be in the same location in memory.  But if you know the address of *something* in the target library, then you can just calculate the offset to the address of what you want to call.
 
 Fortunately for us, we have a method of getting the address of puts in the libc library.  So with that address known (which will change each time you run the program), we can calculate the address of the execve function and call it.
 
@@ -178,7 +179,7 @@ We will have our python script connect to the server and send the correct inputs
 Refer to the commented python script to execute the vulnerability.
 
 #### Execution
-- Setup our own server since the CTF server is no longer running.  We set the input and output buffers to be 0 so that the sending and receiving of data to and from our python script is faster and unbuffered.  We set netcat in listen mode on port 4444 and piping it's input and output to the bookshelf executable.  This effectively lets our python script interact with the bookshelf program over the network.  Even though this is on the local system, it doesn't ahve to be.  The server machine can be anywhere in the world that we have a network path to.
+- Setup our own server since the CTF server is no longer running.  We set the input and output buffers to be 0 so that the sending and receiving of data to and from our python script is faster and unbuffered.  We set netcat in listen mode on port 4444 and piping it's input and output to the bookshelf executable.  This effectively lets our python script interact with the bookshelf program over the network.  Even though this is on the local system, it doesn't have to be.  The server machine can be anywhere in the world that we have a network path to.
 ![](images/ss_18.PNG)
 
 - Execute the python script and wait for the command prompt.
