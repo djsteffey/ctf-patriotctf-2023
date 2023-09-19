@@ -152,7 +152,7 @@ When we get to the end of the adminBook function the following steps will occur:
 - that return will pop off the next item and got to that address which is the address for execve
 - since we have the appropriate registers set with the appropriate values, we should get a shell that we can enter standard linux commands into
 
-Now...I said this was *almost* the right values.  If the libc library was loaded into memory at the same addresses show in Ghidra then this would work right away.  Unfortunately, that is not the case because of ASLR.  However, if we know *any* address in the library when it is in memory then we can use offsets to get the address of what we really want.  The offset in the file in Ghidra will be the same offset when the file is loaded in memory.  Fortunately, we have already covered how we get the address to the puts function.  So now we need to compute each of those addresses offset from puts.
+Now...I said this was *almost* the right values.  If the libc library was loaded into memory at the same addresses shown in Ghidra then this would work right away.  Unfortunately, that is not the case because of ASLR.  However, if we know *any* address in the library when it is in memory then we can use offsets to get the address of what we really want.  The offset in the file in Ghidra will be the same offset when the file is loaded in memory.  Fortunately, we have already covered how we get the address to the puts function.  So now we need to compute each of those addresses offset from puts.
 | What | Address in Ghidra | Offset from puts |
 |---|---|---|
 | "/bin/sh" | 0x29604f | +0x12054f |
