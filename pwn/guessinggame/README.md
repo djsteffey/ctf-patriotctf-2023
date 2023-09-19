@@ -30,7 +30,7 @@ On line 13 our user input goes into the buffer called local_138.  It is compared
 
 We can see that it just reads in a flag.txt file and then prints out the contents of that file which presumably is the actual flag.  You may ask "why dont we just open that file locally and see it?".  Well remember that this executable is *actually* running on a remote server.  That is the one we interact with.  And the flag.txt file exists on that remote server.  So we don't have direct access to it.
 
-So, we need someway to convine the check function to call this outputFlag function.  Let's go back.
+So, we need someway to convince the check function to call this outputFlag function.  Let's go back.
 ![](images/ss_02.PNG)
 
 What can we control?  We can control the user input which gets put into the local_138 buffer.  But local_c is the variable that determines if the outputFlag function is called or not (line 21).  The value of local_c is explicity set to 0 (line 11).  How can we change that value?  And the answer is with a classic buffer overflow (https://en.wikipedia.org/wiki/Buffer_overflow).
