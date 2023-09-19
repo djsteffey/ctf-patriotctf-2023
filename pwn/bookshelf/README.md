@@ -12,7 +12,7 @@
 
 This vulnerability is completely reliant on the version of libc running on your system that is loaded by the bookshelf program.  The libc that was provided as part of the challenge is the libc that existed on their server system.  It is relatively unlikely it is the same version running on your system you are testing with, since you will act as the server also.
 
-So if you want to live test this on your system, replace the libc library here with the one from your test system.  To find it on your test system execute the following command: `ldd ./bookshelf` while in the same directory as the bookshelf program.  You should get a line that tells you libc.so.6 => file location.  Copy that file to your bookshelf directory and use that file for the rest of the solution.  This will also mean that when we discuss offsets in the libx library from puts to other areas, my numbers may differ from yours due to different libc versions.
+So if you want to live test this on your system, replace the libc library here with the one from your test system.  To find it on your test system execute the following command: `ldd ./bookshelf` while in the same directory as the bookshelf program.  You should get a line that tells you libc.so.6 => file location.  Copy that file to your bookshelf directory and use that file for the rest of the solution.  This will also mean that when we discuss offsets in the libc library from puts to other areas, my numbers may differ from yours due to different libc versions.
 ```
 
 
