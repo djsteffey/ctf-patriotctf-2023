@@ -13,7 +13,7 @@ This was probably the easiest problem in the CTF.
 Let's take a look at the python file first.
 ![](images/ss_00.PNG)
 
-Ok there looks like list of some characters in the alphabet variable.  We have a main function that runs.  Inside it is a key, a decrypt (xor) with that key and then a print.  Oh look!  It even tells us that we need to put a for loop there.  And the problem says "find a way to iterate through the alphabet variable to decrupt the flag".
+Ok there looks like list of some characters in the alphabet variable.  We have a main function that runs.  Inside it is a key, a decrypt (xor) with that key and then a print.  Oh look!  It even tells us that we need to put a for loop there.  And the problem says "find a way to iterate through the alphabet variable to decrypt the flag".
 
 
 Beyond easy.
